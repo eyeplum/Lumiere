@@ -43,13 +43,22 @@
   {
     "title": "Share the Docker image on Docker Hub",
     "bullet_points": [
-      "TODO"
+      "hub.docker.com",
+      "Upload Docker images",
+      "Automated Build",
+      "  Link with a GitHub repo",
+      "  Build images automatically (when pushed to repo)",
+      "$ docker pull namespace/image_name",
+      "Example: eyeplum/swift-dev"
     ]
   },
   {
     "title": "TODO: Developing and Testing projects for swift.org in Docker",
     "bullet_points": [
-      "TODO"
+      "Only dependencies are built into the image",
+      "All related projects are copied into the container as resources",
+      "Build products and run unit tests in containers",
+      "Example: [WIP] eyeplum/swift-foundation-dev"
     ]
   }
 ]
