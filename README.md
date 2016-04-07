@@ -61,7 +61,7 @@ $ swift lumiere.swift swift_on_docker.json
 
 - `$ docker cp file_to_copy container_id:destination_file_path`
 
-- Example: A simple Swfit script running in OS X and an Ubuntu container
+- Example: A simple Swift script running in OS X and an Ubuntu container
 
 
 ## Share the Docker image on Docker Hub

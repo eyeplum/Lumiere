@@ -37,7 +37,7 @@
       "  See: Best practices for writing Dockerfiles",
       "$ docker run",
       "$ docker cp file_to_copy container_id:destination_file_path",
-      "Example: A simple Swfit script running in OS X and an Ubuntu container"
+      "Example: A simple Swift script running in OS X and an Ubuntu container"
     ]
   },
   {
