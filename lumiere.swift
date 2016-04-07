@@ -10,8 +10,11 @@ struct Slide
   let bulletPoints: [String]
 }
 
-let kSlideTitleKey = "title"
-let kSlideBulletPointKey = "bullet_points"
+struct JSONKeys
+{
+  static let title = "title"
+  static let bulletPoints = "bullet_points"
+}
 
 func loadSlides(fileURL: NSURL) -> [Slide]?
 {
@@ -31,8 +34,8 @@ func loadSlides(fileURL: NSURL) -> [Slide]?
   var slides: [Slide] = []
   for (index, slideJSON) in slidesJSON.enumerate()
   {
-    guard let title = slideJSON[kSlideTitleKey] as? String,
-          let bulletPoints = slideJSON[kSlideBulletPointKey] as? [String] else
+    guard let title = slideJSON[JSONKeys.title] as? String,
+          let bulletPoints = slideJSON[JSONKeys.bulletPoints] as? [String] else
     {
       continue
     }
