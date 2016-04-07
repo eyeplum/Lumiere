@@ -15,30 +15,34 @@ let kSlideBulletPointKey = "bullet_points"
 
 func loadSlides(fileURL: NSURL) -> [Slide]?
 {
-  if let slidesData = NSData(contentsOfURL: fileURL)
+  guard let slidesData = NSData(contentsOfURL: fileURL) else
   {
-    do {
-      if let slidesJSON = try NSJSONSerialization.JSONObjectWithData(slidesData, options: []) as? [[String:AnyObject]]
-      {
-        var slides: [Slide] = []
-        for (index, slideJSON) in slidesJSON.enumerate()
-        {
-          if let title = slideJSON[kSlideTitleKey] as? String
-          {
-            let slideTitle = "\(title) [\(index + 1)/\(slidesJSON.count)]"
-            let slide = Slide(title: slideTitle, bulletPoints: slideJSON[kSlideBulletPointKey] as! [String])
-            slides.append(slide)
-          }
-        }
-        return slides
-      }
-    }
-    catch {
-      print("Invalid slides data.")
-    }
+    print("Invalid slides data.")
+    return nil
   }
-  
-  return nil
+
+  guard let slidesJSONObject = try? NSJSONSerialization.JSONObjectWithData(slidesData, options: []),
+        let slidesJSON = slidesJSONObject as? [[String : AnyObject]] else
+  {
+    print("Invalid slides data.")
+    return nil
+  }
+
+  var slides: [Slide] = []
+  for (index, slideJSON) in slidesJSON.enumerate()
+  {
+    guard let title = slideJSON[kSlideTitleKey] as? String,
+          let bulletPoints = slideJSON[kSlideBulletPointKey] as? [String] else
+    {
+      continue
+    }
+
+    let slideTitle = "\(title) [\(index + 1)/\(slidesJSON.count)]"
+    let slide = Slide(title: slideTitle, bulletPoints: bulletPoints)
+    slides.append(slide)
+  }
+
+  return slides
 }
 
 func startDisplayLoop(slides: [Slide])
