@@ -55,7 +55,7 @@ $ swift lumiere.swift swift_on_docker.json
 
   	- Don’t put important user data in containers, copy them as resources
 
-  	- See: Best practices for writing Dockerfiles
+  	- See: [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 
 - `$ docker run`
 
