@@ -53,7 +53,7 @@ $ swift lumiere.swift swift_on_docker.json
 
 	- Containers are considered short running and easily re-creatable
 
-  	- Don’t put import user data in containers, copy them as resources
+  	- Don’t put important user data in containers, copy them as resources
 
   	- See: Best practices for writing Dockerfiles
 
