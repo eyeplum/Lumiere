@@ -4,7 +4,7 @@
     "bullet_points": [
       "docker.com",
       "|  Let you separate your applications from your infrastructure,",
-      "|  Let you treat your infrastructure like a managed application,",
+      "|  and treat your infrastructure like a managed application,",
       "|  ...without a hypervisor."
     ]
   },
