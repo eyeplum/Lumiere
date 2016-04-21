@@ -1,24 +1,25 @@
 [
   {
     "type": "basic_cover",
-    "title": "Swift on Docker",
+    "title": "Swift on Docker (0.2.0)",
     "bullet_points": []
   },
   {
     "type": "basic_page",
-    "title": "What's Docker?",
+    "title": "What is Docker?",
     "bullet_points": [
       "docker.com",
-      "|  Let you separate your applications from your infrastructure,",
-      "|  and treat your infrastructure like a managed application,",
-      "|  ...without a hypervisor."
+      "|    Let you separate your applications from your infrastructure,",
+      "|    and treat your infrastructure like a managed application,",
+      "|    ...without a hypervisor."
     ]
   },
   {
     "type": "basic_page",
     "title": "What can we use Docker for?",
     "bullet_points": [
-      "Run the latest development snapshot on Ubuntu"
+      "Run the latest development snapshot",
+      "Build and test swift.org projects"
     ]
   },
   {
@@ -26,28 +27,40 @@
     "title": "Build a Docker image",
     "bullet_points": [
       "Docker image: your infrastructure, considered immutable",
-      "Built by reading the instructions from a Dockerfile",
-      "What's in our Dockerfile",
-      "  Add Ubuntu as a dependency",
-      "  Install necessary packages (clang/libxml/libicu...)",
-      "  Download and verify the latest Swift development snapshot",
-      "    Only the `development` branch contains the Swift Package Manager",
-      "$ docker build",
-      "Example: Dockerfile in eyeplum/swift-dev"
+      "Built by reading the instructions from a Dockerfile"
     ]
+  },
+  {
+    "type": "basic_page",
+    "title": "What's in our Dockerfile",
+    "bullet_points": [
+      "Add Ubuntu as a dependency",
+      "Install necessary packages (clang/libxml/libicu...)",
+      "Download and verify the latest Swift development snapshot",
+      "    Only the `development` branch contains the Swift Package Manager"
+    ]
+  },
+  {
+    "type": "basic_cover",
+    "title": "Example: eyeplum/swift-dev",
+    "bullet_points": []
   },
   {
     "type": "basic_page",
     "title": "Run the Docker image in a container",
     "bullet_points": [
       "Docker container: running image + runtime user data",
-      "  Containers are considered short running and easily re-creatable",
-      "  Don’t put important user data in containers, copy them as resources",
-      "  See: Best practices for writing Dockerfiles",
-      "$ docker run",
-      "$ docker cp file_to_copy container_id:destination_file_path",
-      "Example: A simple Swift script running in OS X and an Ubuntu container"
+      "    Containers are considered short running and easily re-creatable",
+      "    Don’t put important user data in containers",
+      "        Copy them as resources",
+      "        Load them as data volumes",
+      "See: Best practices for writing Dockerfiles"
     ]
+  },
+  {
+    "type": "basic_cover",
+    "title": "Example: A simple Swift script running in OS X and an Ubuntu container",
+    "bullet_points": []
   },
   {
     "type": "basic_page",
@@ -58,18 +71,21 @@
       "Automated Build",
       "  Link with a GitHub repo",
       "  Build images automatically (when pushed to repo)",
-      "$ docker pull namespace/image_name",
-      "Example: eyeplum/swift-dev"
+      "$ docker pull namespace/image_name"
     ]
   },
   {
     "type": "basic_page",
-    "title": "TODO: Developing and Testing projects for swift.org in Docker",
+    "title": "Swift.org on Docker",
     "bullet_points": [
       "Only dependencies are built into the image",
-      "All related projects are copied into the container as resources",
-      "Build products and run unit tests in containers",
-      "Example: [WIP] eyeplum/swift-foundation-dev"
+      "All related projects are loaded into the container as a data volume",
+      "Build and test in containers",
     ]
+  },
+  {
+    "type": "basic_cover",
+    "title": "Example: eyeplum/swift-foundation-dev",
+    "bullet_points": []
   }
 ]
