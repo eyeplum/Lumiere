@@ -87,5 +87,10 @@
     "type": "basic_cover",
     "title": "Example: eyeplum/swift-foundation-dev",
     "bullet_points": []
+  },
+  {
+    "type": "basic_cover",
+    "title": "Thank you!",
+    "bullet_points": []
   }
 ]
