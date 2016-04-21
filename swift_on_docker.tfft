@@ -95,5 +95,10 @@
     "bullet_points": [
       "@eyeplum"
     ]
+  },
+  {
+    "type": "basic_cover",
+    "title": "One more thing...",
+    "bullet_points": []
   }
 ]
