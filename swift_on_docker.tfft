@@ -1,5 +1,6 @@
 [
   {
+    "type": "basic_page",
     "title": "What's Docker?",
     "bullet_points": [
       "docker.com",
@@ -9,12 +10,14 @@
     ]
   },
   {
+    "type": "basic_page",
     "title": "What can we use Docker for?",
     "bullet_points": [
       "Run the latest development snapshot on Ubuntu"
     ]
   },
   {
+    "type": "basic_page",
     "title": "Build a Docker image",
     "bullet_points": [
       "Docker image: your infrastructure, considered immutable",
@@ -29,6 +32,7 @@
     ]
   },
   {
+    "type": "basic_page",
     "title": "Run the Docker image in a container",
     "bullet_points": [
       "Docker container: running image + runtime user data",
@@ -41,6 +45,7 @@
     ]
   },
   {
+    "type": "basic_page",
     "title": "Share the Docker image on Docker Hub",
     "bullet_points": [
       "hub.docker.com",
@@ -53,6 +58,7 @@
     ]
   },
   {
+    "type": "basic_page",
     "title": "TODO: Developing and Testing projects for swift.org in Docker",
     "bullet_points": [
       "Only dependencies are built into the image",

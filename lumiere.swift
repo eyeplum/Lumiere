@@ -50,7 +50,7 @@ func loadSlides(fileURL: NSURL) -> [Slide]?
 
 func startDisplayLoop(slides: [Slide])
 {
-  print("Bonjour! ಠ_ರೃ ")
+  print("Bonsoir! ಠ_ರೃ ")
   print("Je suis Lumière, your personal projector.")
   print("Press enter to start.")
   print("")
