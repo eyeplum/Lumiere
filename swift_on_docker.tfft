@@ -1,5 +1,10 @@
 [
   {
+    "type": "basic_cover",
+    "title": "Swift on Docker",
+    "bullet_points": []
+  },
+  {
     "type": "basic_page",
     "title": "What's Docker?",
     "bullet_points": [
