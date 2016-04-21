@@ -1,7 +1,8 @@
 [
   {
     "type": "basic_cover",
-    "title": "Swift on Docker", "bullet_points": [
+    "title": "Swift on Docker", 
+    "bullet_points": [
       "v0.2.0"
     ]
   },
