@@ -74,6 +74,16 @@
     ]
   },
   {
+    "type": "basic_page",
+    "title": "swift-corelibs-foundation",
+    "bullet_points": [
+      "-v <path to projects>:<path in container>",
+      "The container should have at least 6GB of RAM",
+      "Default RAM is 2GB",
+      "    clang: error: unable to execute command: Killed"
+    ]
+  },
+  {
     "type": "basic_cover",
     "title": "Example: eyeplum/swift-foundation-dev",
     "bullet_points": []
