@@ -1,45 +1,45 @@
 [
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "Swift on Docker", 
-    "bullet_points": [
+    "bulletPoints": [
       "v0.2.0"
     ]
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "What is Docker",
-    "bullet_points": [
+    "bulletPoints": [
       "Let you separate your applications from your infrastructure,",
       "and treat your infrastructure like a managed application,",
       "...without a hypervisor."
     ]
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "What can we use Docker for",
-    "bullet_points": [
+    "bulletPoints": [
       "Run the latest development snapshot",
       "Build and test swift.org projects"
     ]
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "Build a Docker image",
-    "bullet_points": [
+    "bulletPoints": [
       "Docker image: your infrastructure, considered immutable",
       "Built by reading the instructions from a Dockerfile"
     ]
   },
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "Example: eyeplum/swift-dev",
-    "bullet_points": []
+    "bulletPoints": []
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "Run the image in a container",
-    "bullet_points": [
+    "bulletPoints": [
       "Docker container: running image + runtime user data",
       "Containers are considered short running and easily re-creatable",
       "Don’t put important user data in containers",
@@ -49,14 +49,14 @@
     ]
   },
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "Example: drawRect.swift",
-    "bullet_points": []
+    "bulletPoints": []
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "Share the image on Docker Hub",
-    "bullet_points": [
+    "bulletPoints": [
       "hub.docker.com",
       "Upload Docker images",
       "Automated Build",
@@ -66,18 +66,18 @@
     ]
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "Swift.org on Docker",
-    "bullet_points": [
+    "bulletPoints": [
       "Only dependencies are built into the image",
       "All related projects are loaded into the container as a data volume",
       "Build and test in containers",
     ]
   },
   {
-    "type": "basic_page",
+    "type": "Page",
     "title": "swift-corelibs-foundation",
-    "bullet_points": [
+    "bulletPoints": [
       "-v <path to projects>:<path in container>",
       "The container should have at least 6GB of RAM",
       "Default RAM is 2GB",
@@ -85,20 +85,20 @@
     ]
   },
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "Example: eyeplum/swift-foundation-dev",
-    "bullet_points": []
+    "bulletPoints": []
   },
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "Thank you!",
-    "bullet_points": [
+    "bulletPoints": [
       "@eyeplum"
     ]
   },
   {
-    "type": "basic_cover",
+    "type": "Cover",
     "title": "One more thing...",
-    "bullet_points": []
+    "bulletPoints": []
   }
 ]
