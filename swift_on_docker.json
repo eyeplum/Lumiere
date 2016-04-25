@@ -57,7 +57,6 @@
     "type": "Page",
     "title": "Share the image on Docker Hub",
     "bulletPoints": [
-      "hub.docker.com",
       "Upload Docker images",
       "Automated Build",
       "    Link with a GitHub repo",
