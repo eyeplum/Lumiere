@@ -37,7 +37,7 @@ let slides = Slides(pages: [
   Page(title: "Run the image in a container", bulletPoints: [
     "Docker container: running image + runtime user data",
     "Containers are considered short running and easily re-creatable",
-    "Don’t put important user data in containers",
+    "Don't put important user data in containers",
     "    Copy them as resources",
     "    Load them as data volumes",
     "See: Best practices for writing Dockerfiles",
