@@ -12,6 +12,14 @@ let slides = Slides(pages: [
     "...without a hypervisor.",
   ]),
 
+  Page(title: "Inside Docker", bulletPoints: [
+    "Linux Containers",
+    "VirtualBox for virtualize Linux Kernal on OS X / Windows",
+    "Docker for Mac and Windows Beta",
+    "    xhyve VM (based on Hypervisor.framework) on OS X",
+    "    Hyper-V VM on Windows",
+  ]),
+
   Page(title: "What can we use Docker for", bulletPoints: [
     "Run the latest development snapshot",
     "Build and test swift.org projects",
