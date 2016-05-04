@@ -2,7 +2,7 @@ let slides = Slides(pages: [
 
   // Title	
 
-  Cover(title: "Swift on Docker", bulletPoints: ["v0.2.1"]),
+  Cover(title: "Swift on Docker", bulletPoints: ["v0.3"]),
 
   // Section 1
 
