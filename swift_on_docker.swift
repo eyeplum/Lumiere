@@ -40,6 +40,7 @@ let slides = Slides(pages: [
     "Don't put important user data in containers",
     "  Copy them as resources",
     "  Load them as data volumes",
+    "  -v SOURCE:DESTINATION",
     "See: Best practices for writing Dockerfiles",
   ]),
 
@@ -58,19 +59,22 @@ let slides = Slides(pages: [
   // Section 4
 
   Page(title: "Swift.org on Docker", bulletPoints: [
-    "Only dependencies are built into the image",
+    "All dependencies are built into the image",
     "All related projects are loaded into the container as a data volume",
+    "Edit in OS X with Xcode",
     "Build and test in containers",
   ]),
 
   Page(title: "swift-corelibs-foundation", bulletPoints: [
-    "-v <path to projects>:<path in container>",
+    "An implementation of Foundation without ObjC runtime",
+    "  The ObjC one is called Darwin Foundation",
     "The container should have at least 6GB of RAM",
-    "Default RAM is 2GB",
-    "  clang: error: unable to execute command: Killed",
+    "  $ swift/utils/build-script -j1",
+    "Default RAM of docker is 2GB",
+    "  > clang: error: unable to execute command: Killed",
   ]),
 
-  Cover(title: "Example: eyeplum/swift-foundation-dev", bulletPoints: []),
+  Cover(title: "Example: Run tests for swift-corelibs-foundation", bulletPoints: []),
 
   // Ending
 
