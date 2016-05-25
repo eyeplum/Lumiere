@@ -40,7 +40,7 @@ let slides = Slides(pages: [
     "Don't put important user data in containers",
     "  Copy them as resources",
     "  Load them as data volumes",
-    "  -v SOURCE:DESTINATION",
+    "  -v SRC_PATH:DEST_PATH",
     "See: Best practices for writing Dockerfiles",
   ]),
 
