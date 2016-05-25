@@ -16,8 +16,8 @@ let slides = Slides(pages: [
     "Linux Containers",
     "VirtualBox for virtualize Linux Kernal on OS X / Windows",
     "Docker for Mac and Windows Beta",
-    "    xhyve VM (based on Hypervisor.framework) on OS X",
-    "    Hyper-V VM on Windows",
+    "  xhyve VM (based on Hypervisor.framework) on OS X",
+    "  Hyper-V VM on Windows",
   ]),
 
   Page(title: "What can we use Docker for", bulletPoints: [
@@ -38,8 +38,8 @@ let slides = Slides(pages: [
     "Docker container: running image + runtime user data",
     "Containers are considered short running and easily re-creatable",
     "Don't put important user data in containers",
-    "    Copy them as resources",
-    "    Load them as data volumes",
+    "  Copy them as resources",
+    "  Load them as data volumes",
     "See: Best practices for writing Dockerfiles",
   ]),
 
@@ -50,8 +50,8 @@ let slides = Slides(pages: [
   Page(title: "Share the image on Docker Hub", bulletPoints: [
     "Upload Docker images",
     "Automated Build",
-    "    Link with a GitHub repo",
-    "    Build images automatically (when pushed to repo)",
+    "  Link with a GitHub repo",
+    "  Build images automatically (when pushed to repo)",
     "$ docker pull namespace/image_name",
   ]),
 
@@ -67,7 +67,7 @@ let slides = Slides(pages: [
     "-v <path to projects>:<path in container>",
     "The container should have at least 6GB of RAM",
     "Default RAM is 2GB",
-    "    clang: error: unable to execute command: Killed",
+    "  clang: error: unable to execute command: Killed",
   ]),
 
   Cover(title: "Example: eyeplum/swift-foundation-dev", bulletPoints: []),
