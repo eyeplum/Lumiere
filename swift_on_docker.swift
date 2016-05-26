@@ -18,6 +18,7 @@ let slides = Slides(pages: [
     "Docker for Mac and Windows Beta",
     "  xhyve VM (based on Hypervisor.framework) on OS X",
     "  Hyper-V VM on Windows",
+    "  beta-13, currently unstable",
   ]),
 
   Page(title: "What can we use Docker for", bulletPoints: [
