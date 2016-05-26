@@ -80,7 +80,7 @@ let slides = Slides(pages: [
     "  re-run the build or do a clean build (may take a few hours)",
   ]),
 
-  Cover(title: "Example: Run tests for swift-corelibs-foundation", bulletPoints: []),
+  Cover(title: "Example: eyeplum/swift-foundation-dev", bulletPoints: []),
 
   // Ending
 
