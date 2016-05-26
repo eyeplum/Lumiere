@@ -73,6 +73,7 @@ let slides = Slides(pages: [
     "  $ swift/utils/build-script -j1",
     "Default RAM of docker is 2GB",
     "  > clang: error: unable to execute command: Killed",
+    "  > swift/utils/build-script: command terminated with a non-zero exit status 1, aborting",
   ]),
 
   Cover(title: "Example: Run tests for swift-corelibs-foundation", bulletPoints: []),
