@@ -31,6 +31,14 @@ let slides = Slides(pages: [
     "Built by reading the instructions from a Dockerfile",
   ]),
 
+  Page(title: "Share the image on Docker Hub", bulletPoints: [
+    "Upload Docker images",
+    "Automated Build",
+    "  Link with a GitHub repo",
+    "  Build images automatically (when pushed to repo)",
+    "$ docker pull namespace/image_name",
+  ]),
+
   Cover(title: "Example: eyeplum/swift-dev", bulletPoints: []),
 
   // Section 2
@@ -48,16 +56,6 @@ let slides = Slides(pages: [
   Cover(title: "Example: drawRect.swift", bulletPoints: []),
 
   // Section 3
-
-  Page(title: "Share the image on Docker Hub", bulletPoints: [
-    "Upload Docker images",
-    "Automated Build",
-    "  Link with a GitHub repo",
-    "  Build images automatically (when pushed to repo)",
-    "$ docker pull namespace/image_name",
-  ]),
-
-  // Section 4
 
   Page(title: "Swift.org on Docker", bulletPoints: [
     "All dependencies are built into the image",
