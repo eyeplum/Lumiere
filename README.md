@@ -2,9 +2,4 @@
 
 To run the slides:
 
-Open `swift_on_docker.swift` with Truffaut.app.
-
-The app will have a beta release soon.
-
-A command line version of Truffaut will also be available soon.
-
+Open `swift_on_docker.swift` with [Truffaut](http://eyeplum.github.io/citadel/index.html).
